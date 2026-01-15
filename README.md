@@ -22,56 +22,8 @@
 ▶️ **Watch Demo Video:**  
 https://drive.google.com/file/d/1KYBZYQbbogtYSPeB9zP8wjWt1Ri2fUXC/view?usp=drive_link
 
-## 🏗️ Actual Project Structure
-
-LegacyCodeExplainer/
-│
-├── backend/
-│   ├── app/
-│   │   ├── analyzers/
-│   │   │   └── (analysis & explanation logic)
-│   │   │
-│   │   ├── config/
-│   │   │   └── (environment & config files)
-│   │   │
-│   │   ├── core/
-│   │   │   ├── engine.py              # Main processing pipeline
-│   │   │   ├── parser_factory.py      # Returns parser based on language
-│   │   │   ├── code_detector.py       # Auto-detects COBOL / JCL
-│   │   │   └── ir_schema.py            # IR structure definitions
-│   │   │
-│   │   ├── parsers/
-│   │   │   ├── regex_parser/
-│   │   │   │   ├── base_parser.py
-│   │   │   │   └── cobol_regex_parser.py
-│   │   │   │
-│   │   │   └── jcl_parser/
-│   │   │       └── parser.py
-│   │   │
-│   │   ├── explainer.py                # Converts IR to explanations
-│   │   ├── client.py                   # Internal API client (if used)
-│   │   └── main.py                     # FastAPI entry point
-│   │
-│   ├── tests/
-│   │   ├── test_cobol_parser.py
-│   │   ├── test_jcl_parser.py
-│   │   ├── test_parser_factory.py
-│   │   └── test_code_detector.py
-│   │
-│   ├── htmlcov/                        # Coverage report (auto-generated)
-│   └── __init__.py
-│
-├── frontend/
-│   └── app.py                          # Streamlit UI
-│
-├── .env                                # Environment variables
-├── .coverage                           # Coverage data
-├── requirements.txt
-├── pytest.ini
-└── README.md
 
 
----
 
 ## 🔄 System Flow
 
