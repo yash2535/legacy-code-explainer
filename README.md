@@ -15,6 +15,12 @@
 * 🧪 Testing: **Pytest + Coverage**
 
 ---
+## 🎥 Demo Video
+
+📌 A complete walkthrough of the project is available in the demo video below:
+
+▶️ **Watch Demo Video:**  
+https://drive.google.com/file/d/1KYBZYQbbogtYSPeB9zP8wjWt1Ri2fUXC/view?usp=drive_link
 
 ## 🏗️ Actual Project Structure
 
