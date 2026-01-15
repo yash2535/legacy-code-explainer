@@ -1,10 +1,3 @@
-Got it 👍
-Based on your **actual folder structure** and **run commands**, here is an **UPDATED GitHub-ready README** with **correct backend + frontend run instructions**.
-
-You can **replace your existing README.md** with this version (or just copy the **Run Instructions** section if you prefer).
-
----
-
 # 🧠 Legacy Code Explainer
 
 **Regex-Based COBOL & JCL Analysis Tool**
@@ -12,7 +5,7 @@ You can **replace your existing README.md** with this version (or just copy the 
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 
 **Legacy Code Explainer** is a full-stack tool designed to **analyze, understand, and explain legacy mainframe code** such as **COBOL** and **JCL**.
 
