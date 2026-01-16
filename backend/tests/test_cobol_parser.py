@@ -39,9 +39,7 @@ def sample_cobol_code():
     """
 
 
-# ==========================================================
-# BASIC PARSING
-# ==========================================================
+
 
 def test_program_id_extraction(parser, sample_cobol_code):
     ir = parser.parse(sample_cobol_code)

@@ -1,18 +1,32 @@
-# 🧠 Legacy Code Explainer
-
-**Regex-Based COBOL & JCL Analysis Tool**
-
+# 🧠 Legacy Code Explainer  
+**Regex-Based COBOL & JCL Analysis Tool with Multi-Turn Chat Support**
 
 ---
 
-##  Project Overview
+## 📌 Project Overview
 
-**Legacy Code Explainer** is a full-stack tool designed to **analyze, understand, and explain legacy mainframe code** such as **COBOL** and **JCL**.
+**Legacy Code Explainer** is a full-stack application designed to **analyze, understand, and explain legacy mainframe code**, specifically **COBOL** and **JCL**.
 
-* 🔍 Backend: **FastAPI**
-* 🧠 Parsing: **Regex-only parsers**
-* 🖥️ Frontend: **Streamlit**
-* 🧪 Testing: **Pytest + Coverage**
+The system performs **static code analysis**, converts legacy code into a structured **Intermediate Representation (IR)**, and generates **clear, professional explanations**.  
+It also supports **multi-turn conversational queries**, allowing users to ask follow-up questions on the same code without re-parsing.
+
+---
+
+## ✨ Key Features
+
+- ✅ COBOL & JCL static code analysis  
+- ✅ Regex-based parsing with structured IR  
+- ✅ One-time parsing per session (efficient)  
+- ✅ AI-generated explanations grounded strictly in IR  
+- ✅ **Multi-turn conversational chat on the same code**  
+- ✅ SQLite-backed session & IR persistence  
+- ✅ Clean backend–frontend separation  
+- ✅ REST API with FastAPI  
+- ✅ Streamlit-based UI  
+- ✅ Pytest with coverage reporting  
+
+---
+
 
 ---
 ## 🎥 Demo Video
@@ -20,7 +34,7 @@
 📌 A complete walkthrough of the project is available in the demo video below:
 
 ▶️ **Watch Demo Video:**  
-https://drive.google.com/file/d/1KYBZYQbbogtYSPeB9zP8wjWt1Ri2fUXC/view?usp=drive_link
+https://drive.google.com/file/d/1dmQeqIf5iixDveUBkeeQjdg2nio60X2y/view?usp=sharing
 
 
 
@@ -28,7 +42,7 @@ https://drive.google.com/file/d/1KYBZYQbbogtYSPeB9zP8wjWt1Ri2fUXC/view?usp=drive
 ## 🔄 System Flow
 
 ```
-User Uploads COBOL / JCL Code
+User uploads COBOL / JCL code
             ↓
         FastAPI Backend
             ↓
@@ -36,15 +50,17 @@ User Uploads COBOL / JCL Code
             ↓
  Intermediate Representation (IR)
             ↓
- Explanation Engine
+ Initial Explanation (Static Analysis)
+            ↓
+  Multi-Turn Chat (IR Reused)
             ↓
      Streamlit Frontend UI
+
 ```
 
 ---
 
 ## 🧩 Parsing Strategy
-
 
 
 ### ✅ Used

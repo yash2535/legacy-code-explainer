@@ -182,3 +182,32 @@ OUTPUT REQUIREMENTS:
         return result
     except Exception as e:
         return f"ERROR: Failed to generate COBOL explanation: {str(e)}"
+    
+
+def explain_with_query(ir: dict, user_query: str, language: str = "cobol") -> str:
+    if not user_query or not user_query.strip():
+        return explain(ir, language)
+
+    prompt = f"""
+You are a senior IBM Mainframe engineer.
+
+STRICT RULES:
+- Answer ONLY the user's question.
+- Use ONLY the information present in the IR.
+- Do NOT assume runtime execution.
+- Do NOT invent logic.
+- If the requested information is not present, say so clearly.
+
+USER QUESTION:
+{user_query}
+
+INTERMEDIATE REPRESENTATION (IR):
+{ir}
+
+Provide a precise, IR-grounded explanation.
+"""
+
+    try:
+        return call_llm(prompt).strip()
+    except Exception as e:
+        return f"ERROR: {str(e)}"

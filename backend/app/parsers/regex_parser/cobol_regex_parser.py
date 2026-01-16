@@ -6,7 +6,7 @@ from backend.app.core.ir_schema.ir import empty_cobol_ir
 
 class CobolRegexParser(BaseParser):
     """
-    Regex-based COBOL parser (V1 – Stable)
+    Regex-based COBOL parser 
 
     Features:
     - Program info extraction
